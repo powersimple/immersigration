@@ -1,0 +1,265 @@
+html,
+body {
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #000;
+    color: #fff;
+    font: 400 1rem/1.8 'Ubuntu', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+footer, header {
+    flex-shrink: 0; /* Won't shrink smaller than their content size */
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+  //  min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+iframe {
+    border: 0;
+}
+
+.main {
+    min-height: calc(100vh - 60px - 50px);
+    flex: 1 0 auto;
+    max-width: 90%;
+    width: 90%;
+    margin: 40px auto;
+    background-color: #000;
+}
+
+@media (max-width: 767px) {
+    .main {
+        position: relative;
+        top: 50px;
+    }
+}
+
+.main h1.title {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0px 5px;
+}
+
+.main h2.featuring {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.main input,
+.main textarea {
+    color: #20448c;
+    font-weight: 600;
+}
+
+.main p {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+.main ul {
+    margin-bottom: 1em;
+}
+
+.main li {
+    font-size: 1.5rem;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+a {
+    color: cyan;
+}
+
+h2 {
+    text-align: center;
+}
+
+#main.landscape {
+    width: 54%;
+    left: 2%;
+    margin-left: 0px;
+    position: relative;
+}
+
+.light-mode {
+    background-color: #f8f8f8;
+
+    p {
+        color: #111;
+        font-weight: 400;
+    }
+}
+
+.title-bar {
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    z-index: 100;
+
+    @media (max-width: 1280px) {
+        max-width: 640px;
+        margin: 0px auto;
+    }
+}
+
+.title-bar h1.title {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0px 5px;
+}
+
+.title-bar h2.featuring {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.whitebg {
+    background-color: #fff !important;
+    color: #000 !important;
+
+    p, li, strong {
+        color: #000 !important;
+    }
+}
+
+em {
+    font-style: italic;
+}
+
+.fa-x-twitter {
+    font-size: 90% !important;
+}
+
+.sticky {
+    position: sticky;
+    top: 75px;
+    display: contents;
+}
+
+.page-loader {
+    position: fixed;
+    background: #4e473f;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+}
+
+.loader {
+    position: absolute;
+    background: url(images/loader.png) center center no-repeat;
+    height: 300px;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    margin: -150px 0 0 -150px;
+    text-indent: -9999em;
+    font-size: 10px;
+    z-index: 9999;
+    -webkit-animation: load 2s infinite linear;
+    animation: load 2s infinite linear;
+}
+
+.loader,
+.loader:after {
+    width: 300px;
+    height: 300px;
+}
+
+@-webkit-keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+h5.download {
+    text-align: center;
+    margin-top: 1rem;
+    display: block;
+
+    a {
+        color: #fff;
+        font-weight: 600;
+    }
+}
+
+.partners {
+    background-color: #fff;
+    color: #333;
+}
+
+.right {
+    top: 0;
+    padding-left: 2%;
+}
+
+@media (max-width: 767px) {
+    .container-flex {
+        flex-direction: column-reverse;
+    }
+
+    .right {
+        max-height: 60vh; /* 40% of viewport height */
+        overflow-y: auto;
+        overflow-x: hidden;
+        top: 70px;
+        z-index: 10;
+        background-color: #000;
+        padding-left: 0px;
+    }
+}

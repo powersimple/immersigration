@@ -1,0 +1,241 @@
+.profile{
+   
+        overflow: hidden; /* Clear the float */
+  
+    
+    .float-left {
+        float: left;
+        margin-right: 2%; /* Add some spacing between the image and text */
+        width: 38.1%; /* Set the width of the image to 38.1% */
+    }
+    
+    /* You can add additional styles to your text as needed */
+  
+}
+
+.profile-info {
+    p {
+        text-align: left;
+    }
+}
+h1.profile-header{
+    text-shadow: 0px -2px 2px rgba(0, 0, 0, 0.8), 0px 2px 2px rgba(0, 0, 0, 0.8);
+    position: relative ;
+    z-index: 100;
+}
+
+#profile-hero {
+    height: 38.2vh;
+    background-color: #ccc;
+}
+
+.profile-container {
+    padding-top: 50px !important;
+}
+
+#profile-hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.profile-contact {
+    font-size: 200%;
+}
+
+.social-icon {
+    margin-right: 3px;
+}
+.profile-thumbnail {
+  
+    margin: 0 auto 20px;
+    img {
+        width: 100%;
+       
+        display: block;
+        margin: 0 auto;
+
+        border-radius: 50%;
+        border: 2px solid #fff;
+        box-shadow: 0 0 10px 10px rgba(255, 173, 2, 0.4);
+    }
+    @media(max-width:768px){
+        img{
+            max-width: 50%;
+        }
+    }
+}
+.profile-meta{
+    text-align:center;
+    h4{
+        text-align: center;
+    }
+}
+.profile-title{
+  h5{
+      text-align:center;
+      margin-bottom:2rem;
+  }
+  margin-bottom:2rem;
+}
+.team-member{
+    margin-bottom:50px;
+    h4{
+        text-align:center;
+        color:#eee;
+
+    }
+    h5{
+        font-size:1rem;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    a{
+        display:inline-block;
+        transition: transform 0.3s;
+        &:hover {
+            transform: scale(1.2); /* Scale up the link when hovered */
+        }
+    }
+
+    p{
+        font-size:.8rem;
+    }
+    img{
+    border-radius: 50%;
+    width:75%;
+    display: block;
+    margin: 0 auto 1em;
+    box-shadow: 0 0 10px 10px rgba(255, 173, 2, 0.4);
+    @media(max-width:768px){
+       
+            max-width: 50%;
+       
+    }
+    }
+}
+.cause{
+    box-shadow: 0 0 10px 10px rgba(151, 255, 132, 0.4);
+}
+.cause{
+    box-shadow: 0 0 10px 10px rgba(83, 29, 119, 0.4);
+}
+#profile-index{
+    .cred{font-size:1rem;
+    display:block;
+    }
+    font-size:1.5em;
+    h4{
+        color:#fff;
+        border-top:1px dashed #fff;
+        padding-top:5px;
+        margin-top:5px;
+        font-size:1.5rem;
+    }
+    h5 {
+      
+        font-size:1.2rem;
+        margin-bottom:1rem;
+        display: block;
+    }
+    ul, ol{
+        padding-left:25px;
+    }
+    ul li{
+        list-style-type: disc;
+    }
+ ol li{
+        list-style-type:decimal;
+        
+    }
+    li{
+        margin-bottom:0px;
+        font-size: 1rem;
+        color: #00BFFF;
+        a {
+            color: #00BFFF; /* Light blue color */
+            text-decoration: none; /* Remove underlines */
+            transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+          }
+          
+          /* Hover link styles */
+          a:hover {
+            color: #0073e6; /* Brighter blue on hover */
+            text-decoration: underline; /* Underline on hover */
+          }
+    }
+
+}
+#appearances{
+    border:1px solid #ccc;
+    position: relative;
+   top:75px;
+    h4{
+        font-size:1.5rem;
+        text-align: center;
+        margin-top:.5rem;
+
+    }
+    li.event-title{
+        margin-bottom:0px;
+    }
+    ul{
+        padding-left:20px;
+        li.appearance{
+            color:yellow;
+            margin-bottom:0px;
+            font-size:1rem;
+            a{
+                color:#e7e7e7;
+                cursor: pointer;
+                transition: transform 0.3s, color 0.3s, box-shadow 0.3s, scale 0.3s; /* Add scaling effect */
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.profile-meta{
+    margin-bottom:20px;
+    border-bottom:3px outset #ccc;
+    padding-bottom:20px;
+    h5{
+        text-align: center;
+      
+        font-size:1rem;
+        
+    }
+    h5:last-child{margin-bottom: 2em};
+  
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+   
+    display: flex;
+    justify-content: center; /* Center the child elements horizontally */
+    align-items: center; /* Center the child elements vertically */
+    margin-top: 15px;
+    a{
+        font-size:125%;
+        color:#99c;
+        transition: transform 0.3s, color 0.3s, box-shadow 0.3s, scale 0.3s; /* Add scaling effect */
+        margin-top:.5em;
+    
+        
+        &:hover {
+            /* ... Existing hover styles ... */
+            transform: scale(1.2); /* Add scaling effect on hover */
+        }
+    }
+}
+#video-wrap-header{
+    text-align: center;
+    font-size:150%;
+}

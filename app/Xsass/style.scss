@@ -1,0 +1,70 @@
+    /*
+Theme Name: WebXR Summit Series
+
+Author: Ben Erwin, Powersimple, LLC
+Author URI: https://Powersimple/
+Description: 
+Text Domain: powersimple
+
+DO NOT EDIT IN STYLE.CSS
+*/
+    /*
+    PUT YOUR COLOR PALETTE HERE:
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;600;900&display=swap&family=Zen+Dots&family=Goldman');
+    @import "partials/reset";
+    @import "partials/colors";
+    @import "partials/typography";
+    @import "partials/admin";
+    //@import "partials/guide";
+    @import "partials/megamenu";
+    @import "partials/drawer";
+    @import "partials/jqueryui";
+    @import "partials/loader";
+    @import "partials/header";
+    @import "partials/nav";
+    @import "partials/footer";
+    @import "partials/filters";
+    @import "partials/main";
+    @import "partials/sections";
+    @import "partials/video";
+    @import "partials/hero";
+    @import "partials/sponsors";
+    @import "partials/slick";
+    @import "partials/profile";
+    @import "partials/guide";    
+    @import "partials/hardware";
+    @import "partials/runofshow";
+    @import "partials/nominees";
+    @import "partials/event-index";
+//custom event themes
+    @import "partials/_summit-series";
+    @import "partials/_the-polys";
+    @import "partials/_metatraversal";
+    @import "partials/_ready-player-golf";
+    
+
+    ul{
+        padding-left:20px;
+   li{
+  
+    list-style:disc;
+   }
+}
+.calendar-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.calendar-button:hover {
+    background-color: #45a049;
+}

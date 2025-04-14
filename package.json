@@ -1,12 +1,34 @@
 {
   "name": "immersigration",
   "version": "1.0.0",
+  "description": "A minimalist WordPress theme integrated with Vite for modern web development with SCSS and JavaScript bundling.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "build-scss": "npx sass app/scss/style.scss style.css --no-source-map && npx sass app/scss/style.scss style.min.css --style=compressed --source-map",
+    "build-js": "node build-js.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": [
+    "wordpress",
+    "theme",
+    "vite",
+    "scss",
+    "javascript",
+    "webxr",
+    "immersigration"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.83.1",
+    "terser": "^5.37.0",
+    "vite": "^6.0.7",
+    "vite-plugin-live-reload": "^3.0.4"
+  },
+  "dependencies": {
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.7.1",
+    "masonry-layout": "^4.2.2"
+  }
 }

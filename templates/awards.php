@@ -1,0 +1,78 @@
+<div id='top'></div>
+<?php
+    // included from winners pages
+    $GLOBALS['participants'] = [];
+   foreach($awards as $key => $award){// outer menu loop
+    print "<ul class='awards-list'>";
+    foreach($award['children'] as $c =>$child){// EVENTS
+        if($child['classes'][0] == 'nomination' || $child['classes'][0] == 'honor'){
+          
+            if(strpos($child['title'],"–") !== false){
+                $label = explode("–",$child['title']);
+                $label = $label[1];
+            } else {
+                $label = $child['title'];
+            }
+           
+          
+   
+        ?>
+<li><a href="#<?=$child['slug']?>" title="<?=$child['title']?>"><?=$label?></a></li>
+        <?php
+        }
+       
+    } print "</ul>";
+   foreach($award['children'] as $c =>$child){// EVENTS loop
+     ?>
+              
+  
+   <?php
+     if($child['classes'][0] == 'nomination' || $child['classes'][0] == 'honor'){
+       $link = get_permalink($child['ID']);
+       ?>
+       <div class="row justify-content-center">
+       <h3 class="nomination-category"  id="<?=$child['slug']?>">
+      <?php
+      $embed_video_url = @$child['meta']['embed_video_url'][0];
+     if(@$embed_video_url != ''){
+       $embed_video_url;
+   ?>
+  <a href="#<?=$child['slug']?>" onclick="playSessionVideo('<?=$embed_video_url?>');" class='watch video-button' title="WATCH"><i  class="fa fa-youtube"></i></a>
+   
+   <?php
+      }
+   
+   ?>
+      <a href="<?=$link?>" title="<?=$child['title']?>"></a><?=$child['title']?></h3>
+
+ 
+       <div>
+       <?php
+       
+      
+       print "<ul class='nominee-list'>";
+      get_nominees_and_winners($child['children'],0);//recursive nominees loop
+       ?>
+      </ul>
+
+       <a href="#top" class="back-to-top">Back to top ↥</a>
+       </div>      
+       </div><hr>
+       <?php
+     }
+    
+   }
+  
+ 
+ }
+if(($contacts=@$GLOBALS['participants']) && @$_GET['mode']=='contact'){
+  //var_dump($GLOBALS['participants']);
+  foreach($contacts as $key => $contact){
+    print "<div class='contact-card'>";
+    print "$contact[name]|";
+    print "$contact[email]<br>";
+
+    print "</div>";
+  }
+}
+?>

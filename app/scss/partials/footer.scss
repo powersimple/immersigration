@@ -1,0 +1,218 @@
+footer {
+    // Styling for the footer
+    background-color: #111; // Consistent with the header's dark color
+    color: #ffffff; // White text for readability on dark background
+    text-align: center;
+    padding: 5px 0;
+    z-index: 1;
+   
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    // If you want a maximum width to your footer content (like the header)
+    .container {
+        max-width: 1140px; // Bootstrap's large container width
+        margin: 0 auto;
+    }
+    /*
+    position: absolute;
+    display: table;
+    z-index: 100;
+   background-color: rgba(0,0,0,1);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 10px 0;
+   top:100vh;
+   margin-top:-36px;
+    min-height:50px;
+    max-height: 2vh;
+    color:$gray_text;
+    @media(max-width: 768px) {
+        margin-top:-100px;
+
+    }
+    */
+    .xri-logo {
+        width: 100px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    span.copyright {
+        display: inline-block;
+        line-height: 120%;
+        vertical-align: top;
+        margin: 0;
+        font-size: 9px;
+       
+        padding-bottom: .5em;
+        span {
+            margin-top: 5px;
+            display: inline-block;
+            @media(max-width: 768px) {
+                //display: block;
+                margin-top: 0px;
+            }
+        }
+
+    }
+    .footer-social-links {
+        text-align: right;
+    }
+    .footer-social-links a {
+        display: inline-block;
+        line-height: 52px;
+        vertical-align: top;
+        padding: 0 6px;
+    }
+    footer.horizontal.maxed {
+        width: 50%;
+        left: 50%;
+        position: absolute;
+        height: 50px;
+    }
+    ul{
+       
+        li{
+            list-style:none;
+            
+            display: inline-block;
+           
+            a{
+                text-decoration: none;
+                font-size:70%;
+            }
+            @media(max-width:767px){
+              //  display: block;
+                border:none !important;
+            }
+        }
+        li:first-child{
+            border-left:none;
+            
+        }
+        li:last-child{
+            //border-right:1px solid #fff;
+        }
+    }
+     
+}
+#footer-menu{
+    ul li{
+    padding:0px 10px;
+   font-size:80%;
+    }
+}
+#social-menu li{
+    padding:0px 5px;
+    @media(max-width:767px){
+        padding:10px 5px;
+
+    }
+}
+
+.page-footer {
+    display: block;
+    position: absolute;
+    top: 10.25in;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    padding: 0px;
+    .dots {
+        width: 25%;
+        left: 50%;
+        margin-left: -12.5%;
+        display: block;
+        position: absolute;
+    }
+    a {
+        color: blue;
+    }
+    a:hover {
+        color:#fff;
+    }
+    
+    strong {
+        font-weight: 700;
+    }
+}
+
+.partners{
+    background-color: #000;
+    display: inline-block;
+    padding-right:25px;
+    
+
+    bottom:0px;
+    left:0px;
+    .container{
+        margin-bottom:0px;
+        padding:5px 0px;
+    }
+    a{
+        font-size:.8rem;
+    }
+    a:hover, a:active{
+        color:#FFF;
+    }
+
+    //position: fixed;
+    //top: 50vh;
+}
+.awe{
+    background:url(images/logo/awe50h.png) center left no-repeat transparent;
+    background-size: contain;
+    padding-left:25px;
+}
+.vrara{
+    background:url(images/logo/vrara-summit-emblem.png) center left no-repeat transparent;
+    background-size: contain;
+    padding-left:28px;
+}
+.gatherverse{
+    background:url(images/logo/Gather-Verse-Summit-Logo.png) center left no-repeat transparent;
+    background-size: contain;
+    padding-left:28px;
+}
+.futurewei{
+    background:url(images/logo/futurewei.png) center left no-repeat transparent;
+    background-size: contain;
+    padding-left:25px;
+}
+.metavrse{
+    background:url(images/logo/metavrse-logo.png) center center no-repeat transparent;
+    background-size: contain;
+    
+    height:14px;
+    display: block;
+    position: relative;
+    top:1px;
+    width:150px;
+}
+.point-cloud{
+    font-family: 'Zen Dots', cursive;
+    font-size:12px;
+    text-transform: none;
+    line-height: 120%;
+    display:block;
+}
+.experiences-header{
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 10px 0px;
+    list-style: none;
+    margin:0px auto;
+    color: white;
+
+}
+#rights{
+    font-size:.5rem;
+    line-height: 120%;
+    @media(max-width:767px){
+        padding-top:10px;
+
+    }
+}

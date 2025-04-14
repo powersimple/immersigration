@@ -1,0 +1,71 @@
+    /*
+Theme Name: Immersigration
+
+Author: Ben Erwin, Powersimple, LLC
+Author URI: https://Powersimple/
+Description: 
+Text Domain: powersimple
+Comiled using: VITE
+DO NOT EDIT IN STYLE.CSS
+*/
+    /*
+    PUT YOUR COLOR PALETTE HERE:
+*/
+
+//@use "partials/colors" as *;
+
+    @use "partials/reset";
+    @use "partials/typography";
+    @use "partials/admin";
+    //@use "partials/guide";
+    @use "partials/megamenu";
+    @use "partials/drawer";
+    @use "partials/jqueryui";
+    @use "partials/loader";
+    @use "partials/header";
+    @use "partials/nav";
+    @use "partials/footer";
+    @use "partials/filters";
+    @use "partials/main";
+    @use "partials/sections";
+    @use "partials/video";
+    @use "partials/hero";
+    @use "partials/sponsors";
+    @use "partials/slick";
+    @use "partials/profile";
+    @use "partials/guide";    
+    @use "partials/hardware";
+    @use "partials/runofshow";
+    @use "partials/nominees";
+    @use "partials/event-index";
+//custom event themes
+    @use "partials/_summit-series";
+    @use "partials/_the-polys";
+    @use "partials/_metatraversal";
+    @use "partials/_ready-player-golf";
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;600;900&display=swap&family=Zen+Dots&family=Goldman');
+    ul{
+        padding-left:20px;
+   li{
+  
+    list-style:disc;
+
+   }
+}
+.calendar-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    span{
+        text-decoration: none;
+    }
+}
+.calendar-button:hover {
+    background-color: #45a049;
+    color:#fff;
+}

@@ -1,0 +1,213 @@
+#hero {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px; /* Adjust the height based on your design */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        pointer-events: none;
+    }
+}
+
+/* Dark background */
+.bg-dark,
+.bg-dark-30,
+.bg-dark-60,
+.bg-dark-90,
+.bg-dark .module-title,
+.bg-dark-30 .module-title,
+.bg-dark-60 .module-title,
+.bg-dark-90 .module-title,
+.bg-dark .module-subtitle,
+.bg-dark-30 .module-subtitle,
+.bg-dark-60 .module-subtitle,
+.bg-dark-90 .module-subtitle,
+.bg-dark .alt-module-subtitle h5,
+.bg-dark-30 .alt-module-subtitle h5,
+.bg-dark-60 .alt-module-subtitle h5,
+.bg-dark-90 .alt-module-subtitle h5 {
+    color: #fff;
+}
+
+.bg-dark-30::before {
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.bg-dark-60::before {
+    position: absolute;
+    background: rgba(34, 34, 34, 0.8);
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.bg-dark-90::before {
+    position: absolute;
+    background: rgba(34, 34, 34, 0.9);
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.bg-gradient::before {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(40, 115, 113, 0.57) 25%, rgba(115, 54, 31, 0.67) 75%);
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* -------------------------------------------------------------------
+Hero Slider
+------------------------------------------------------------------- */
+.hero-slider {
+    margin: 0 !important;
+
+    .slides > li {
+        display: none;
+    }
+
+    &,
+    .flex-viewport {
+        height: 100% !important;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .slides {
+        height: 100% !important;
+        transition-delay: 1s;
+    }
+
+    .flex-direction-nav a {
+        width: 15%;
+    }
+
+    .slides li {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100% !important;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        @media (max-width: 1280px) {
+            background-position: bottom left;
+        }
+
+        @media (orientation: portrait) {
+            background-position: bottom left;
+        }
+    }
+}
+
+/* Caption */
+.titan-caption {
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.caption-content {
+    display: table-cell;
+    width: 70%;
+    top: 50vh;
+    left: 50%;
+    margin-left: -35%;
+    text-align: center;
+    position: absolute;
+}
+
+.bg-light {
+    background: #f6f6f6;
+}
+
+.parallax-bg {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.titan-title-size-1 {
+    letter-spacing: 4px;
+    font-size: 2vw;
+    text-shadow: 1px 1px #333;
+}
+
+.titan-title-size-2 {
+    line-height: 1.3;
+    letter-spacing: 3px;
+    font-size: 2vw;
+    opacity: 0.8;
+    text-shadow: 1px 1px #333;
+}
+
+.titan-title-size-3 {
+    letter-spacing: 16px;
+    font-size: 3vw;
+    text-shadow: 1px 1px #333;
+}
+
+.titan-title-size-4 {
+    letter-spacing: 24px;
+    font-weight: 900;
+    font-size: 4vw;
+    line-height: 120%;
+    text-shadow: 5px 5px $darkest_blue;
+}
+
+.caption-content a.btn {
+    font-size: 1vw;
+    text-shadow: 1px 1px #000;
+    background-color: rgba(18, 19, 60, 0.6);
+
+    p {
+        font-weight: 700;
+        margin-bottom: 0;
+
+        span {
+            color: $light_green;
+        }
+    }
+
+    @media (max-width: 767px) {
+        max-width: 90%;
+        word-wrap: break-word;
+    }
+}
+
+.hero-content {
+    @media (max-width: 767px) {
+        background-size: cover !important;
+        padding-bottom: 50%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        top: 75px;
+        position: sticky;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-mobile-left {
+        background-position: left;
+    }
+
+    .hero-mobile-right {
+        background-position: right;
+    }
+}
