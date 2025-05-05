@@ -11,7 +11,7 @@
 
 
 
-<a-asset-item id="AcademyLogo" response-type="arraybuffer" src="/assets/models/polys/5th/AcademyLogo.glb"></a-asset-item>
+
 
 <a-asset-item id="The5thPolysLogo" response-type="arraybuffer" src="/assets/models/polys/5th/5thPolysLogo-Trophy-March.glb"></a-asset-item>
 
@@ -89,7 +89,7 @@ if(@$asset_list){// this var is created in panels.php
 ?>
 
 <?php
- $trophy = '5thPolyImmersiveTrophy';//default
+ $trophy = 'Poly-2024-Trophy-March23-2025';//default
  if(@$_GET['trophy']){
      $trophy = @$_GET['trophy'];
  }

@@ -4,9 +4,9 @@
     <a-light id="spot-main-1" type="spot" color="white" intensity="30" position="0 120 0" rotation="-90 0 0"
              light="angle: 55"></a-light>
              <a-light id="spot-main-2" type="spot" color="white" intensity="28" position="2.08501 76.68219 71.51311" rotation="-20.373806237056943 0 -3.390191273789081" light="angle: 50" visible=""></a-light>
-             <a-light id="spot-main-3" type="spot" color="white" intensity="28" position="-8.92509 11.37721 101.93818" rotation="" light="intensity: 15; angle: 50" visible=""></a-light>
+          <!--     <a-light id="spot-main-3" type="spot" color="white" intensity="28" position="-8.92509 11.37721 101.93818" rotation="" light="intensity: 15; angle: 50" visible=""></a-light>
 
-    <!-- Directional Fill Lights (Scaled Up, Lower Intensity) -->
+   Directional Fill Lights (Scaled Up, Lower Intensity) -->
     <a-light id="directional-front" type="directional" color="white" intensity="1.8" position="300 150 300"></a-light>
     <a-light id="directional-back" type="directional" color="white" intensity="1.8" position="-300 150 -300"></a-light>
 

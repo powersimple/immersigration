@@ -79,19 +79,18 @@
 
 
    <!--TROPHY-->
-   <a-entity id="<?=$pedestal['slug']?>-grab" class="clickable grabbable center-obj-zone" static-body="shape: box; mass: 2" position="0.01464 1.92767 -0.02769" mixin="obj" rotation="0 0 0" scale=".5 .5 .5" gltf-model="#trophy">
+   <a-entity id="<?=$pedestal['slug']?>-grab" class="clickable grabbable center-obj-zone" static-body="shape: box; mass: 2" position="0.00729 1.92767 0.00835" mixin="obj" rotation="0 30 0" scale=".5 .5 .5" gltf-model="#trophy">
    <?php
     if($counter==0){}
         ?> 
-<a-light id="light-p5c-3" color="white" position="-2.79319 0.97826 2.92914" rotation="0.390 -45.03 0.42000000000000004" light="color: #ffc800; angle: 20; type: spot; intensity: 60.14; distance: 3.39" visible="">
+<a-light id="light-p5c-3" color="white" position="-2.63319 0.97826 2.92914" rotation="4.99 -41.95 -17.04" light="color: #ffc800; angle: 19.82; type: spot; intensity: 20; distance: 3.39" visible="">
 </a-light>
-
     <!-- Left Angle Light (45 degrees) -->
-    <a-light id="light-p5c-2" color="white" position="1.88137 1.75 3.51503" rotation="0 45 0" light="color: #ffc800; angle: 20; type: spot; intensity: 8; distance: 2.5">
+    <a-light id="light-p5c-2" color="white" position="1.88137 1.75 3.51503" rotation="0 45 0" light="color: #ffc800; angle: 20; type: spot; intensity: 5; distance: 2.5" visible="">
     </a-light>
 
     <!-- Right Angle Light (-45 degrees) -->
-    <a-light id="light-p5c-3" color="white" position="4.4343 0.29826 3.72449" rotation="0.67 45 0" light="color: #ffc800; angle: 20; type: spot; intensity: 60.14; distance: 3.39" visible="">
+    <a-light id="light-p5c-3" color="white" position="4.4343 0.29826 3.72449" rotation="0.67 45 0" light="color: #ffc800; angle: 20; type: spot; intensity: 31.12; distance: 4.37" visible="">
     </a-light>
         <?php
     
@@ -103,7 +102,7 @@
 </a-entity>
   
 <!--NOMINATIONs WRAPPER-->
-   <a-entity id="nominations" rotation="5 0 0" position="0 100 -240" scale="30 30 30" shadow >
+   <a-entity id="nominations" rotation="5 0 0" position="0 77.63 -325" scale="20 20 20" shadow >
    
            <a-entity id="<?=$pedestal['slug']?>-title" class="art-text" mixin="table-label" position="0 0 0" color="white"
                width="2.5" rotation="0 0 0" text="value:;wrapCount:50 ">

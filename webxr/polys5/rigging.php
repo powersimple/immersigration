@@ -7,6 +7,15 @@ if(@$_GET['speed']){
 $cam_x =0;
 $cam_y =1.6;
 $cam_z =-3.5;
+
+$fov = 50; // default FOV
+if(@$_GET['fov']){
+    $fov = 50;
+
+}
+
+
+
 if(@$_GET['camera']){
     $cam_coords =  explode("~",$_GET['camera']);
     if(count($cam_coords) == 3){
@@ -49,7 +58,7 @@ $camera = "$cam_x $cam_y $cam_z";
 
             -->
             
-        <a-entity id="camera" camera look-controls raycaster="far: 5; objects: .clickable"
+        <a-entity id="camera" camera="fov:<?=$fov?>" camera look-controls raycaster="far: 5; objects: .clickable"
             super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"
             position="<?=$camera?>" 
         
