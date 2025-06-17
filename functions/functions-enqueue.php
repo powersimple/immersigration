@@ -1,5 +1,11 @@
 <?php
 
+    // Load translations at init
+    function load_powersimple_textdomain() {
+        load_theme_textdomain( 'powersimple', get_template_directory() . '/languages' );
+    }
+    add_action( 'init', 'load_powersimple_textdomain' );
+
     function enqueue_style() {
 
         //because without this, there is no site, at least not a coherent one.

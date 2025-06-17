@@ -1,7 +1,11 @@
 <?php
 add_theme_support( 'post-thumbnails' );
-//enqueues scripts and styles
-require_once("functions/functions-enqueue.php");
+
+// Load functions-enqueue.php at init action
+function load_enqueue_functions() {
+    require_once("functions/functions-enqueue.php");
+}
+add_action('init', 'load_enqueue_functions');
 require_once("xr/xr.php"); // oh yes, webxr is here, boyeee
 //handles custom metaboxes for admin
 require_once("functions/functions-metabox.php");

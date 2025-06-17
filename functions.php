@@ -1,62 +1,52 @@
 <?php
- require_once "functions/functions-aframe.php";
-//enqueues scripts and styles
-require_once("functions/functions-enqueue.php");
-require_once("functions/functions-ballot.php");
-require_once("functions/metaboxes-aframe.php");
-
-require_once("functions/functions-metabox.php");
-
-	//enqueues scripts and styles
-	require_once("functions/functions-rest-endpoints.php");
-	// special class to register the restapi
-
-	require_once("functions/functions-post-types.php");
-	require_once("functions/functions-profiles.php");
-	require_once("functions/functions-events.php");
-	require_once("functions/functions-awards.php");
-	require_once("functions/functions-virtual-production.php");
-	require_once("functions/functions-rest-menus.php");
-	// custom functions to register fields into the restapi
-	require_once("functions/functions-rest-register.php");
-	require_once("functions/functions-rest-taxonomy.php");
-	require_once("functions/functions-navigation.php");
-	require_once("functions/functions-custom-menu-admin.php");
-	require_once("functions/functions-entities.php");	
-	require_once("functions/functions-publish.php");   
-	require_once("functions/parsers.php");
-	require_once("functions/import.php");
-	require_once("functions/profiler/profiler.php");
-
-	require_once("functions/scraper/simple_html_dom.php");
-	require_once("functions/functions-print.php");
-	require_once("functions/functions-post-access.php");
-	
-	add_post_type_support( 'page', 'excerpt' );
-
-	add_action('admin_notices', 'show_content_url');
-	function show_content_url() {
-		echo '<div class="notice notice-info is-dismissible">';
-		echo '<p>Content URL: ' . content_url() . '</p>';
-		echo '</div>';
-	}
+// Load all functions files at init action
+function load_theme_functions() {
+    require_once "functions/functions-aframe.php";
+    require_once("functions/functions-enqueue.php");
+    require_once("functions/functions-ballot.php");
+    require_once("functions/metaboxes-aframe.php");
+    require_once("functions/functions-metabox.php");
+    require_once("functions/functions-rest-endpoints.php");
+    require_once("functions/functions-post-types.php");
+    require_once("functions/functions-profiles.php");
+    require_once("functions/functions-events.php");
+    require_once("functions/functions-awards.php");
+    require_once("functions/functions-virtual-production.php");
+    require_once("functions/functions-rest-menus.php");
+    require_once("functions/functions-rest-register.php");
+    require_once("functions/functions-rest-taxonomy.php");
+    require_once("functions/functions-navigation.php");
+    require_once("functions/functions-custom-menu-admin.php");
+    require_once("functions/functions-entities.php");
+    require_once("functions/functions-publish.php");
+    require_once("functions/parsers.php");
+    require_once("functions/import.php");
+    require_once("functions/profiler/profiler.php");
+    require_once("functions/scraper/simple_html_dom.php");
+    require_once("functions/functions-print.php");
+    require_once("functions/functions-post-access.php");
+    
+    add_post_type_support( 'page', 'excerpt' );
+    add_action('admin_notices', 'show_content_url');
+    function show_content_url() {
+        echo '<div class="notice notice-info is-dismissible">';
+        echo '<p>Content URL: ' . content_url() . '</p>';
+        echo '</div>';
+    }
+}
+add_action('init', 'load_theme_functions');
 
 function featured_image_support(){
-	add_theme_support('post-thumbnails', array(
-		'post',
-		'page',
-		'social',
-		'profile',
-		'resource',
-		'sponsor',
-		'event'
-		));
+    add_theme_support('post-thumbnails', array(
+        'post',
+        'page',
+        'social',
+        'profile',
+        'resource',
+        'sponsor',
+        'event'
+    ));
 }
-
-// former field filtration plugin,
-//require_once('functions/rest-api-filter-fields.class.php');
- 
-  
 add_action('after_setup_theme', 'featured_image_support');
 
 
